@@ -7,8 +7,7 @@ makes use of Unity's ScriptableObjects to allow for shared / monitored variables
 
 Flow:
 Game Start -> Subscribers register their methods with SO (instance of the shared var).
-At runtime: Publisher makes change to value (SO / var) -> SO broadcasts to subs -> Subscriber receives and reacts.
 
-The intent of the files in this repo is to provide easy to implement code that allows easier reuse this pattern.
+At runtime: Publisher makes change to value (SO / var) -> SO broadcasts to subs -> Subscriber receives and reacts.
 
 Setup video TBD

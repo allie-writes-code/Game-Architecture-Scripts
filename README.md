@@ -1,4 +1,4 @@
-# Unity Framework Scripts
+# Unity / Game Architecture and Framework Scripts
 
 The [Delegate Subscriber Pattern](https://github.com/allie-writes-code/Unity-Framework-Scripts/tree/main/Delegate%20Subscriber%20Pattern) makes use of Unity's ScriptableObjects to allow for shared / monitored variables that can broadcast upon update / interaction to subscribed methods, allowing objects to more easily monitor for changes to values or states. Note that the intent is to reduce update checks, i.e. an object doesn't need to check if a value has changed every frame, it only needs to know when it does.
 

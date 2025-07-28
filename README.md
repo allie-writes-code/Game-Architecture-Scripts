@@ -11,3 +11,7 @@ Game Start -> Subscribers register their methods with SO (instance of the shared
 At runtime: Publisher makes change to value (SO / var) -> SO broadcasts to subs -> Subscriber receives and reacts.
 
 Setup video TBD
+
+## [Input Architecture and Frameworks](https://github.com/allie-writes-code/Game-Architecture-Scripts/tree/main/Input/)
+
+Frameworks and helper code to assist with implementing player input architecture.

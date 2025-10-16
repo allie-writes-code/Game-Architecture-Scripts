@@ -3,6 +3,18 @@ using UnityEngine.Events;
 
 //! Delegate Pattern class, Broadcaster, scriptable object.
 //! Will broadcast and run any subscribed functions when invoked.
+/*! In the script you want to have broadcast:
+ * Reference an instance of DeleteBroadcaster - e.g.
+ * 
+ * [SerializeField]
+ * private DelegateBroadcaster myBroadcaster;
+ * 
+ * Then invoke the broadcaster from a function - e.g.
+ * 
+ * private void ExampleFunction(){myBroadcaster.InvokeMe();}
+ * 
+ * Don't forget to also configure a DelegateListener!
+ */
 [CreateAssetMenu(fileName = "New Delegate Broadcaster", menuName = "Scriptable Objects/Helpers/Delegate Subscribers/Broadcaster", order = 2)]
 public class DelegateBroadcaster : ScriptableObject
 {
@@ -21,14 +33,3 @@ public class DelegateBroadcaster : ScriptableObject
         onInvocation?.Invoke();
     }
 }
-
-/*! In the script you want to have broadcast:
- * Reference an instance of DeleteBroadcaster - e.g.
- * [SerializeField]
- * private DelegateBroadcaster myBroadcaster;
- * 
- * Then invoke the broadcaster from a function - e.g.
- * private void ExampleFunction(){myBroadcaster.InvokeMe();}
- * 
- * Don't forget to also configure a DelegateListener!
- */

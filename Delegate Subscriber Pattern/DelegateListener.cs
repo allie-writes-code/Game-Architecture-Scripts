@@ -6,12 +6,12 @@ using UnityEngine.Events;
 /*! In the script you want to have listening for a broadcast.
  * Reference an instance of a DelegateListener - e.g.
  * 
- * [SerializeField]
- * private DelegateListener myListener;
+ * [SerializeField] private DelegateListener myListener;
  * 
  * Register and deregister the function you want to run from this script somewhere at the start and end of this class' life - e.g.
  * 
  * private void OnEnable(){myListener.RegisterFunction(myFunctionIWantToRun);}
+ * 
  * private void OnDisable(){myListener.DeregisterFunction(myFunctionIWantToRun);}
  * 
  * Elsewhere in the class, you'd have a function defined for 'myFunctionIWantToRun'.
